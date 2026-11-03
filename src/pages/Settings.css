@@ -1,0 +1,334 @@
+
+/* =====================================
+   SETTINGS PAGE
+===================================== */
+
+.bm-settings-page {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  color: var(--text-primary, #333333);
+}
+
+/* Page Header */
+
+.bm-settings-header {
+  margin-bottom: 25px;
+}
+
+.bm-settings-header h1 {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 750;
+  letter-spacing: -0.6px;
+}
+
+.bm-settings-header p {
+  margin: 7px 0 0;
+  color: var(--text-secondary, #777777);
+  font-size: 14px;
+}
+
+/* Settings Card */
+
+.bm-settings-card {
+  padding: 25px;
+  margin-bottom: 22px;
+  background: var(--card-bg, #ffffff);
+  border: 1px solid var(--border-color, #eeeeee);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow, 0 2px 10px rgba(0, 0, 0, 0.035));
+}
+
+/* Profile */
+
+.bm-settings-profile {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border-color, #eeeeee);
+}
+
+.bm-settings-profile-info h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.bm-settings-profile-info p {
+  margin: 0;
+  color: var(--text-secondary, #777777);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+/* Form */
+
+.bm-settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.bm-settings-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.bm-settings-field label {
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.bm-settings-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bm-settings-input-wrapper > svg {
+  position: absolute;
+  left: 15px;
+  color: #999999;
+  pointer-events: none;
+}
+
+.bm-settings-input-wrapper input {
+  width: 100%;
+  min-height: 47px;
+  padding: 12px 15px 12px 45px;
+  border: 1px solid var(--border-color, #dddddd);
+  border-radius: 10px;
+  outline: none;
+  background: var(--input-bg, var(--card-bg, #ffffff));
+  color: var(--text-primary, #333333);
+  font-family: inherit;
+  font-size: 13px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.bm-settings-input-wrapper input:focus {
+  border-color: #800000;
+  box-shadow: 0 0 0 3px rgba(128, 0, 0, 0.09);
+}
+
+.bm-settings-input-wrapper.disabled input {
+  background: var(--bg-secondary, #f5f5f5);
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.bm-settings-hint {
+  margin: 0;
+  color: var(--text-muted, #999999);
+  font-size: 11px;
+}
+
+/* Save Button */
+
+.bm-settings-save-btn {
+  width: fit-content;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #800000;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.bm-settings-save-btn:hover:not(:disabled) {
+  background: #570000;
+  transform: translateY(-1px);
+}
+
+.bm-settings-save-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* Success and Error Messages */
+
+.bm-settings-message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 10px 13px;
+  border-radius: 9px;
+  font-size: 12px;
+}
+
+.bm-settings-message.success {
+  background: #eaf7ef;
+  color: #21834a;
+}
+
+.bm-settings-message.error {
+  background: #fff0f0;
+  color: #d33e3e;
+}
+
+/* Appearance */
+
+.bm-settings-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 25px;
+}
+
+.bm-settings-appearance-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 13px;
+  background: #f8eeee;
+  color: #800000;
+}
+
+.bm-settings-section-heading h2 {
+  margin: 0 0 5px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.bm-settings-section-heading p {
+  margin: 0;
+  color: var(--text-secondary, #777777);
+  font-size: 13px;
+}
+
+.bm-settings-appearance-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color, #eeeeee);
+}
+
+.bm-settings-appearance-row h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.bm-settings-appearance-row p {
+  margin: 0;
+  color: var(--text-secondary, #777777);
+  font-size: 12px;
+}
+
+.bm-settings-theme-btn {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 11px 17px;
+  border: none;
+  border-radius: 10px;
+  background: #800000;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.bm-settings-theme-btn:hover {
+  background: #570000;
+  transform: translateY(-1px);
+}
+
+/* Dark Mode */
+
+html.dark .bm-settings-appearance-icon {
+  background: rgba(165, 42, 42, 0.2);
+  color: #e5a0a0;
+}
+
+html.dark .bm-settings-message.success {
+  background: rgba(33, 150, 83, 0.15);
+  color: #70d49b;
+}
+
+html.dark .bm-settings-message.error {
+  background: rgba(220, 68, 68, 0.15);
+  color: #ff8585;
+}
+
+html.dark .bm-settings-input-wrapper input:focus {
+  border-color: #a52a2a;
+  box-shadow: 0 0 0 3px rgba(165, 42, 42, 0.15);
+}
+
+/* Responsive */
+
+@media (max-width: 650px) {
+  .bm-settings-header h1 {
+    font-size: 23px;
+  }
+
+  .bm-settings-card {
+    padding: 19px;
+  }
+
+  .bm-settings-profile {
+    gap: 13px;
+  }
+
+  .bm-settings-profile-info h3 {
+    font-size: 16px;
+  }
+
+  .bm-settings-appearance-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .bm-settings-theme-btn {
+    width: 100%;
+  }
+
+  .bm-settings-save-btn {
+    width: 100%;
+  }
+}
+
+
+/* DARK MODE - EMAIL FIELD */
+
+html.dark .bm-settings-page input[type="email"],
+html.dark .bm-settings-page .bm-settings-email,
+html.dark .bm-settings-page .bm-email-field {
+  background: #302326 !important;
+  color: #FFFFFF !important;
+  border-color: #49383D !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+}
+
+html.dark .bm-settings-page input[type="email"]:disabled,
+html.dark .bm-settings-page input[type="email"][readonly] {
+  background: #302326 !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  opacity: 1;
+}

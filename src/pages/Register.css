@@ -1,0 +1,75 @@
+/* FIX REGISTER INPUT BACKGROUND AND ALIGNMENT */
+
+.bm-register-card .bm-auth-input-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  width: 100%;
+  height: 50px;
+  padding: 0 14px !important;
+  background: #ffffff !important;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 9px;
+  box-shadow: none !important;
+}
+
+.bm-register-card .bm-auth-input-wrapper:focus-within {
+  border-color: #800000 !important;
+  box-shadow: 0 0 0 3px rgba(128, 0, 0, 0.08) !important;
+}
+
+.bm-register-card .bm-auth-input-wrapper svg {
+  flex-shrink: 0 !important;
+  width: 18px;
+  height: 18px;
+  color: #888888 !important;
+}
+
+.bm-register-card .bm-auth-input-wrapper input {
+  display: block !important;
+  flex: 1 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: #ffffff !important;
+  color: #333333 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-size: 14px;
+  font-family: inherit;
+  appearance: none;
+}
+
+.bm-register-card .bm-auth-input-wrapper input::placeholder {
+  color: #999999 !important;
+  opacity: 1;
+}
+
+/* Prevent browser autofill from turning inputs dark */
+
+.bm-register-card .bm-auth-input-wrapper input:-webkit-autofill,
+.bm-register-card .bm-auth-input-wrapper input:-webkit-autofill:hover,
+.bm-register-card .bm-auth-input-wrapper input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #333333 !important;
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+}
+
+/* Dark mode */
+
+html.dark .bm-register-card .bm-auth-input-wrapper {
+  background: #252525 !important;
+  border-color: #444444 !important;
+}
+
+html.dark .bm-register-card .bm-auth-input-wrapper input {
+  background: #252525 !important;
+  color: #ffffff !important;
+}
+
+html.dark .bm-register-card .bm-auth-input-wrapper input:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0 1000px #252525 inset !important;
+}
